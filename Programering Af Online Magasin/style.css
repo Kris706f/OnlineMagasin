@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),green);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+
+
+.prem h1{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+
+.prem{
+    background-image: url(images/zumbaggrund.jpg);
+}
+.superliga{
+    background-image: url(images/bundbaggrund.jpg);
+}
+.superliga h1{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+
+
+.beholder{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/grønbaggrund.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    transform: translateX(50%);
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+nav ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+
+/*Her laver jeg CSS for teksten på min index side*/
+.tekstboks{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.tekstboks p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.tekstboks h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+.tekstboks h3{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.tekstboks .knapperaekke{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tekstboks a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+}
+
+
+
+
+
+/*ALT HERUNDER <ER TIL DIV'ERNE*/
+
+.divsiden{
+    background-image: url(images/bundbaggrund.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: space-evenly;
+    height: 700px;
+   
+}
+
+.todiv{
+    height: 600px;
+    width: 350px;
+
+    position: relative;
+    color: #fff;
+   background-color: #fff;
+    border-style: groove;
+    border-color: #fff;
+    
+}
+.toøverst{
+    height: 70%; /*420px*/
+    width: 100%;
+
+
+    border-style: groove;
+    border-color: #fff;
+}
+.tonederst{
+    height: 30%; /*180px*/
+    width: 100%;
+
+   
+    border-style: groove;
+    border-color: #fff;
+}
+
+.toøverst h2{
+    position: absolute;
+    top: 320px;
+    left: 5px;
+}
+.tonederst h2{
+    position: absolute;
+    top: 520px;
+    left: 5px;
+}
+
+
+.trediv{
+    height: 600px;
+    width: 350px;
+
+    position: relative;
+    color: #fff;
+
+    border-style: groove;
+    border-color: #fff;
+
+}
+
+.trediv h2{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.treøverst{
+    height: 30%; /*180px*/
+    width: 100%;
+
+
+    border-style: groove;
+    border-color: #fff;
+}
+.tremidt{
+    height: 40%; /*240px*/
+    width: 100%;
+   
+
+    border-style: groove;
+    border-color: #fff;
+}
+.trenederst{
+    height: 30%; /*180px*/
+    width: 100%;
+
+
+    border-style: groove;
+    border-color: #fff;
+}
+.treøverst h2{
+    position: absolute;
+    top: 100px;
+    left: 5px;
+
+
+}
+.tremidt h2{
+    position: absolute;
+    top: 320px;
+    left: 5px;
+}
+.trenederst h2{
+    position: absolute;
+    top: 520px;
+    left: 5px;
+}
+
+
+.endiv{
+    height: 600px;
+    width: 350px;
+
+    position: relative;
+    color: #fff;
+    border-style: groove;
+    border-color: #fff;
+}
+.enøverst{
+    height: 100%;
+    width: 100%;
+
+ 
+    
+}
+.enøverst h2{
+    position: absolute;
+    top: 520px;
+    left: 5px;
+}
+
+
+
+.divsiden .enøverst{
+    background-image: url(images/scholz.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.divsiden .tremidt{
+    background-image: url(images/fckzecca.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.divsiden .treøverst{
+    background-image: url(images/fcn.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.divsiden .trenederst{
+    background-image: url(images/ugensprofil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.divsiden .toøverst{
+    background-image: url(images/brøndby.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.divsiden .tonederst{
+    background-image: url(images/cajuste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.andendivsiden{
+    background-image: url(images/bundebaggrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+     height: 700px;
+  
+    
+}
+
+/*Her under finder du alle hover til div siden med forskellige artikler*/
+
+.divsiden .enøverst:hover{
+    background-size: 115%;
+}
+.divsiden .treøverst:hover{
+    background-size: 115%;
+}
+.divsiden .tremidt:hover{
+    background-size: 115%;
+}
+.divsiden .trenederst:hover{
+    background-size: 115%;
+}
+.divsiden .toøverst:hover{
+    background-size: 115%;
+}
+.divsiden .tonederst:hover{
+    background-size: 115%;
+  
+    
+}
+
+
+
+
+
+
+
+
+/*Alt herunder omhandler footer*/
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: #303036;
+    color: #fff;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.venstrefod{
+    height: 400px;
+    width: 500px;
+    padding-left: 10px;
+}
+
+
+.midtfod{
+    height: 400px;
+    width: 500px;
+    text-align: center;
+}
+.midtfod h3{
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    margin-left: 180px;
+    margin-right: 180px;
+    text-align: center;
+}
+.midtfod a{
+    text-decoration: none;
+    color: #fff;
+}
+.midtfod a:hover{
+    padding-left: 12px;
+    transition: 0.5s;
+    border-bottom: 3px solid #fff;
+    border-bottom-left-radius: 10px;
+}
+
+
+.højrefod{
+    height: 400px;
+    width: 500px;
+   
+
+}
+ .højrefod h3{
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    margin-left: 180px;
+    margin-right: 180px;
+    text-align: center;
+    margin-top: 30px;
+ }
+ .højrefod .email{
+    display: block;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+   
+ }
+ .højrefod .tekst{
+    display: block;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 20%;
+    margin-left: 20px;
+    background-color: #444;
+    color: #fff;
+ }
+.sendknap{
+    background-color: #006669;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin-left: 350px;
+
+}
+
+
+
+
+
+
+
+
+/*Social media icon*/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #0A66C2;
+    color: white;
+  }
+  .fa-instagram {
+    background: #ff0000;
+    color: white;
+  }
+  .fa:hover {
+    opacity: 0.7;
+   
+  }
