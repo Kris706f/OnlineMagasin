@@ -333,32 +333,46 @@ nav ul li:hover .submenu1{
     top: 520px;
     left: 5px;
 }
-
-.divsiden img{
-
-}
-
-
-
-
-
 .andendivsiden{
     background-image: url(images/bundebaggrund.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-evenly;
-     height: 700px;
-  
-    
+     height: 700px;  
 }
+
+.toøverst:hover{
+    zoom: 105%;
+}
+.tonederst:hover{
+    zoom: 105%;
+}
+.treøverst:hover{
+    zoom: 105%;
+}
+.tremidt:hover{
+    zoom: 105%;
+}
+.trenederst:hover{
+    zoom: 105%;
+}
+.endiv:hover{
+    zoom: 105%;
+}
+
+
+
+
+
+
 
 
 /* SLUTTER Div på index siden
 STARTER - - - artikel*/
 
 .artikel{
- height: 1150px;
+ height: auto;
 width: 60%;
 position: relative;
 right: 20%;
@@ -403,8 +417,12 @@ justify-content: center;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .artikel img{
-    margin-top: 30px;
-    margin-left: 70px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+margin-top: 15px;
+
 }
 .billedetekst{
     color: gray;
@@ -450,7 +468,6 @@ footer{
     width: 100%;
     background-color: #303036;
     color: #fff;
-    background-repeat: none;
     background-size: cover;
     display: flex;
     justify-content: space-between;
